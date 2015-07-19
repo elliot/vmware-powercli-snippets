@@ -1,0 +1,1 @@
+(Get-VMHost "dc1-vm-01" | Get-View).EnterLockdownMode() | Get-VMHost | Select Name,@{N="LockDown"; E={$_.Extensiondata.Config.adminDisabled}} | FT -auto Name LockDown 

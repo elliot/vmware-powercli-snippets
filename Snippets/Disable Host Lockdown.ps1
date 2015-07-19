@@ -1,0 +1,1 @@
+(Get-VMHost "dc1-vm-01" | Get-View).ExitLockdownMode() 
